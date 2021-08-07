@@ -8,9 +8,9 @@ export const BodyWrapper = styled(Card)`
   width: 100%;
   z-index: 5;
   border:0;
-  border-radius: 0px !important;
-  border-bottom-left-radius: 20px !important;
-  border-bottom-right-radius: 20px !important;
+  border-radius: 20px !important;
+  // border-bottom-left-radius: 20px !important;
+  // border-bottom-right-radius: 20px !important;
 `
 
 /**

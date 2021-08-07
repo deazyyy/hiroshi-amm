@@ -114,6 +114,7 @@ const SlippageToleranceSettings = () => {
               value={value}
               onChange={handleChange}
               isWarning={error !== null}
+              style={{border: "2px solid #C7EBF3",background:"transparent"}}
             />
           </Option>
           <Option>
@@ -122,7 +123,7 @@ const SlippageToleranceSettings = () => {
         </Flex>
       </Options>
       {error && (
-        <Text mt="8px" color="failure">
+        <Text mt="8px" color="red">
           {error}
         </Text>
       )}

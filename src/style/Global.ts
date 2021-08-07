@@ -17,7 +17,7 @@ const GlobalStyle = createGlobalStyle`
     // width: fit-content;
     background-position:top 3vh left;
     font-family: "Poppins", sans-serif;
-
+    padding-top:100px;
     img {
       height: auto;
       max-width: 100%;

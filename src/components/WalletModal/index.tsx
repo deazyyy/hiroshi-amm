@@ -288,7 +288,7 @@ export default function WalletModal({
     if (error) {
       return (
         <UpperSection>
-          <CloseIcon onClick={toggleWalletModal}>
+          <CloseIcon onClick={toggleWalletModal} color="rgba(47, 75, 96, 0.4)">
             <CloseColor />
           </CloseIcon>
           <HeaderRow>{error instanceof UnsupportedChainIdError ? 'Wrong Network' : 'Error connecting'}</HeaderRow>

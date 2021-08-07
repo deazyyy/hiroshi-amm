@@ -44,24 +44,22 @@ export const SearchInput = styled.input`
   align-items: center;
   width: 100%;
   white-space: nowrap;
-  background: rgba(246,246,246,1);
+  background: #fff;
   outline: none;
   border-radius: 12px;
   color: ${({ theme }) => theme.colors.text};
-  border-style: solid;
-  border: 1px solid rgba(246,246,246,1);
+  border: 2px solid #C7EBF3;
   -webkit-appearance: none;
   font-weight:500;
   font-size: 14px;
 
   ::placeholder {
-    color: ${({ theme }) => theme.colors.textDisabled};
+    color:rgba(105, 169, 184, 0.4);
     font-weight:500;
     font-weight:13px;
   }
   transition: border 100ms;
   :focus {
-    border: 1px solid rgba(246,246,246,1);
     outline: none;
   }
 `

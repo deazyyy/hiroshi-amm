@@ -28,10 +28,14 @@ export const BottomSection = styled(Section)`
 const StyledContentHeader = styled.div`
   align-items: center;
   display: flex;
+  margin-bottom:14px;
 
   & > ${Heading} {
     flex: 1;
     color:#2F4B60;
+  }
+  & > ${IconButton} {
+    margin-right:-10px
   }
 `
 
@@ -44,7 +48,7 @@ export const ContentHeader = ({ children, onDismiss }: ContentHeaderProps) => (
   <StyledContentHeader>
     <Heading>{children}</Heading>
     <IconButton onClick={onDismiss} variant="text">
-      <CloseIcon color="text" />
+      <CloseIcon color="rgba(47, 75, 96, 0.4)" />
     </IconButton>
   </StyledContentHeader>
 )

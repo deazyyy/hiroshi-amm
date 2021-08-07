@@ -307,7 +307,7 @@ export default function AccountDetails({
   return (
     <>
       <UpperSection>
-        <CloseIcon onClick={toggleWalletModal}>
+        <CloseIcon onClick={toggleWalletModal} color="rgba(47, 75, 96, 0.4)">
           <CloseColor />
         </CloseIcon>
         <HeaderRow>Account</HeaderRow>

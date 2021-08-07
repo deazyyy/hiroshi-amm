@@ -45,7 +45,7 @@ const Waves = (props) => {
         className="waves wave3"
         options={{
           height: 60,
-          amplitude: 20,
+          amplitude: 15,
           speed: 0.15,
           points: 2,
         }}

@@ -153,7 +153,7 @@ export function CurrencySearch({
               )}
             />
           </Text>
-          <CloseIcon onClick={onDismiss} />
+          <CloseIcon onClick={onDismiss} color="rgba(47, 75, 96, 0.4)"/>
         </RowBetween>
         <SearchInput
           type="text"

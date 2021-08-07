@@ -2596,9 +2596,9 @@
     truffle-flattener "^1.4.4"
     truffle-hdwallet-provider "^1.0.17"
 
-"@pancakeswap-libs/uikit@deazyyy/hiroshiuikit":
+"@pancakeswap-libs/uikit@deazyyy/hiroshiuikitv1":
   version "0.10.2"
-  resolved "https://codeload.github.com/deazyyy/hiroshiuikit/tar.gz/ef77854a3968fda5decc5d60d72b64e80cedc4e9"
+  resolved "https://codeload.github.com/deazyyy/hiroshiuikitv1/tar.gz/67fac2987d2f3c17d2182b53a65e6b9097b66b10"
   dependencies:
     "@types/lodash" "^4.14.162"
     "@types/styled-system" "^5.1.10"
