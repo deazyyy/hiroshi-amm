@@ -38,10 +38,10 @@ const BodyWrapper = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  // min-height: calc(100vh - 128px);
+  min-height: calc(100vh - 200px);
   align-items: center;
   flex: 1;
-  margin-top: -64px;
+  // margin-top: 64px;
   overflow-y: auto;
   overflow-x: hidden;
   z-index: 1;
