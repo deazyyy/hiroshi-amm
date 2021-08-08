@@ -41,6 +41,28 @@ const Label = styled.div`
   margin-bottom: 8px;
 `
 
+const ButtonFlex = styled(Flex)`
+background: linear-gradient(
+  90deg
+  ,rgba(120,170,231,0.2) 0%,rgba(71,205,184,0.2) 100%);
+      border-radius: 12px;
+  height:46px;
+  align-items:center;
+  button{
+    margin:0;
+    border:0;
+    background:transparent;
+    border-radius:0;
+    font-weight: 600;
+    color: #2F4B60;
+  }
+  div{
+    &:not(:last-child){
+      border-right: 1px solid #9FD7E2;
+    }s
+  }
+`
+
 const predefinedValues = [
   { label: '0.1%', value: 0.1 },
   { label: '0.5%', value: 0.5 },
@@ -84,13 +106,13 @@ const SlippageToleranceSettings = () => {
   return (
     <StyledSlippageToleranceSettings>
       <Label>
-        <Text style={{ fontWeight: 600 }}>
+        <Text style={{ fontWeight: 500 }}>
           <TranslatedText translationId={88}>Slippage tolerance</TranslatedText>
         </Text>
         <QuestionHelper text="Your transaction will revert if the price changes unfavorably by more than this percentage." />
       </Label>
       <Options>
-        <Flex mb={['8px', 0]} mr={[0, '8px']}>
+        <ButtonFlex mb={['8px', 0]} mr={[0, '8px']}>
           {predefinedValues.map(({ label, value: predefinedValue }) => {
             const handleClick = () => setValue(predefinedValue)
 
@@ -102,7 +124,7 @@ const SlippageToleranceSettings = () => {
               </Option>
             )
           })}
-        </Flex>
+        </ButtonFlex>
         <Flex alignItems="center">
           <Option>
             <Input
@@ -114,7 +136,7 @@ const SlippageToleranceSettings = () => {
               value={value}
               onChange={handleChange}
               isWarning={error !== null}
-              style={{border: "2px solid #C7EBF3",background:"transparent"}}
+              style={{background:"#F1FAFC"}}
             />
           </Option>
           <Option>

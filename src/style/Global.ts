@@ -24,11 +24,11 @@ const GlobalStyle = createGlobalStyle`
       max-width: 100%;
     }
   }
-  .connectBtn{
-    img{
-      display:none;
-    }
-  }
+  // .connectBtn{
+  //   img{
+  //     display:none;
+  //   }
+  // }
   // .menutopdesk{
   //   display:none;
   // }
@@ -1432,6 +1432,30 @@ const GlobalStyle = createGlobalStyle`
   }
 }
 #join-pool-button{width:100%}
+
+.depositmodal h2, .modalwallet h2, .settingsmodal h2, .recentransactionmodal h2,  .connectmodal h2{
+  color: #2F4B60 !important;
+  font-size:22px !important;
+  font-weight:600 !important
+}
+.modalwallet{
+  position:relative;
+  overflow: visible;
+ h2{
+  margin-top:45px !important;
+ }
+  .useridimg{
+    position:absolute;
+    top:0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.settingsmodal{
+
+}
+.exchangemenubtn{display:none}
 
 `
 

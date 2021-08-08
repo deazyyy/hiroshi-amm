@@ -45,23 +45,23 @@ const RecentTransactionsModal = ({ onDismiss = defaultOnDismiss }: RecentTransac
   }, [allTransactions])
 
   return (
-    <Modal title="Recent Transactions" onDismiss={onDismiss}>
+    <Modal title="Recent Transactions" onDismiss={onDismiss} className="recentransactionmodal">
       {!account && (
         <Flex justifyContent="center" flexDirection="column" alignItems="center">
-          <Text mb="8px" bold>
+          <Text mb="8px">
             Please connect your wallet to view your recent transactions
           </Text>
-          <Buttonstyle variant="tertiary" size="sm" onClick={onDismiss}>
+          <Buttonstyle variant="primary" size="sm" mt="12px" onClick={onDismiss}>
             Close
           </Buttonstyle>
         </Flex>
       )}
       {account && chainId && sortedRecentTransactions.length === 0 && (
         <Flex justifyContent="center" flexDirection="column" alignItems="center">
-          <Text mb="8px" bold>
+          <Text mb="8px">
             No recent transactions
           </Text>
-          <Buttonstyle variant="primary" size="sm" onClick={onDismiss} 
+          <Buttonstyle variant="primary" size="sm"  mt="12px" onClick={onDismiss} 
           >
             Close
           </Buttonstyle>

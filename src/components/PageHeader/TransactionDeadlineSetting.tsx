@@ -57,13 +57,13 @@ const TransactionDeadlineSetting = () => {
   return (
     <StyledTransactionDeadlineSetting>
       <Label>
-        <Text style={{ fontWeight: 600 }}>
+        <Text style={{ fontWeight: 500 }}>
           <TranslatedText translationId={90}>Transaction deadline</TranslatedText>
         </Text>
         <QuestionHelper text="Your transaction will revert if it is pending for more than this long." />
       </Label>
       <Field>
-        <Input type="number" step="1" min="1" value={value} onChange={handleChange} style={{border: "2px solid #C7EBF3",background:"transparent"}}/>
+        <Input type="number" step="1" min="1" value={value} onChange={handleChange} style={{background:"rgb(241, 250, 252)"}}/>
         <Text>Minutes</Text>
       </Field>
       {error && (
