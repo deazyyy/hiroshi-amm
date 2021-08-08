@@ -11,20 +11,12 @@
   "keywords": ["pancake", "default"],
   "tokens": [
     {
-      "name": "Melody Token",
-      "symbol": "MELODY",
-      "address": "0x2f619a1270226fD8ed3Df82f0C1e0cd90804346d",
+      "name": "Hiroshi Token",
+      "symbol": "HIRO",
+      "address": "0xB95903Cc5bAFE817b98e679E7272FB7b54C105F9",
       "chainId": 56,
       "decimals": 18,
-      "logoURI": "/images/coins/MELODY.png"
-    },
-    {
-      "name": "Viola Token",
-      "symbol": "VIOLA",
-      "address": "0x8Acb84E58F24C127a51069D9Eef1c9a8d8F42C70",
-      "chainId": 56,
-      "decimals": 18,
-      "logoURI": "/images/coins/VIOLA.png"
+      "logoURI": "/images/coins/HIRO.png"
     },    
     {
       "name": "WBNB Token",
