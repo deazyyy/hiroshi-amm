@@ -4,7 +4,7 @@ const config: MenuEntry[] = [
   {
     label: 'Home',
     icon: 'HomeIcon',
-    href: 'https://www.mozartfinance.io/'
+    href: 'https://www.hiroshi.farm/'
   },
   {
     label: 'Trade',
@@ -24,12 +24,12 @@ const config: MenuEntry[] = [
   {
     label: 'Elixir Mix',
     icon: 'FarmIcon',
-    href: 'https://www.mozartfinance.io/farms'
+    href: 'https://www.hiroshi.farm/farms'
   },
   {
     label: 'Potion Brew',
     icon: 'PoolIcon',
-    href: 'https://www.mozartfinance.io/nests'
+    href: 'https://www.hiroshi.farm/nests'
   },
   {
     label: 'Info',
