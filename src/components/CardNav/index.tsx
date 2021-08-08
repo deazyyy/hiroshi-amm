@@ -7,7 +7,7 @@ import TranslatedText from '../TranslatedText'
 
 const StyledNav = styled.div`
   position: relative;
-  min-width: 436px;
+  width: 100%;
   max-width: 436px;
   header {
     margin-bottom: -65px;

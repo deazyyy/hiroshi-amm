@@ -2,6 +2,7 @@ import React, { Suspense, useEffect, useState } from 'react'
 import { HashRouter, Route, Switch } from 'react-router-dom'
 import { ResetCSS ,Button} from '@pancakeswap-libs/uikit'
 import styled from 'styled-components'
+import { useMediaQuery } from 'react-responsive'
 // import { Credentials, StringTranslations } from '@crowdin/crowdin-api-client'
 import Popups from '../components/Popups'
 import Web3ReactManager from '../components/Web3ReactManager'
@@ -39,6 +40,7 @@ const BodyWrapper = styled.div`
   flex-direction: column;
   width: 100%;
   min-height: calc(100vh - 200px);
+  padding:0 15px;
   align-items: center;
   flex: 1;
   // margin-top: 64px;
@@ -54,7 +56,7 @@ const BodyWrapper = styled.div`
   background-position: top;
   background-size: contain;
   @media (max-width: 768px) {
-    margin-top:100px;
+    margin-top:0px;
   }
 `
 const Marginer = styled.div`
@@ -65,6 +67,7 @@ export default function App() {
   const [selectedLanguage, setSelectedLanguage] = useState<any>(undefined)
   const [translatedLanguage, setTranslatedLanguage] = useState<any>(undefined)
   const [translations, setTranslations] = useState<Array<any>>([])
+  const isTabletOrMobile = useMediaQuery({ query: '(max-width: 768px)' })
   // const apiKey = `${process.env.REACT_APP_CROWDIN_APIKEY}`
   // const projectId = parseInt(`${process.env.REACT_APP_CROWDIN_PROJECTID}`)
   // const fileId = 6
@@ -114,6 +117,17 @@ export default function App() {
   //   }
   //   // eslint-disable-next-line react-hooks/exhaustive-deps
   // }, [selectedLanguage])
+
+  const dom = document.getElementsByClassName("logoimg")
+  if(isTabletOrMobile){
+    for(let i =0 ; i< dom.length;i++){
+      dom[i].attributes[0].value ="images/hiroshi/logo-mobile.png"
+    }
+  }else{
+    for(let i =0 ; i< dom.length;i++){
+      dom[i].attributes[0].value ="images/hiroshi/logo.png"
+    }
+  }
 
   return (
     <Suspense fallback={null}>

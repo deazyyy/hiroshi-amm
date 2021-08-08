@@ -2596,9 +2596,9 @@
     truffle-flattener "^1.4.4"
     truffle-hdwallet-provider "^1.0.17"
 
-"@pancakeswap-libs/uikit@deazyyy/hiroshiuikitv1":
+"@pancakeswap-libs/uikit@deazyyy/hiroshiuikitv2":
   version "0.10.2"
-  resolved "https://codeload.github.com/deazyyy/hiroshiuikitv1/tar.gz/67fac2987d2f3c17d2182b53a65e6b9097b66b10"
+  resolved "https://codeload.github.com/deazyyy/hiroshiuikitv2/tar.gz/f76bdf6295a5bfde69812d8f602b38265eb78815"
   dependencies:
     "@types/lodash" "^4.14.162"
     "@types/styled-system" "^5.1.10"
@@ -8074,6 +8074,11 @@ css-loader@4.3.0:
     schema-utils "^2.7.1"
     semver "^7.3.2"
 
+css-mediaquery@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/css-mediaquery/-/css-mediaquery-0.1.2.tgz#6a2c37344928618631c54bd33cedd301da18bea0"
+  integrity sha1-aiw3NEkoYYYxxUvTPO3TAdoYvqA=
+
 css-prefers-color-scheme@^3.1.1:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/css-prefers-color-scheme/-/css-prefers-color-scheme-3.1.1.tgz#6f830a2714199d4f0d0d0bb8a27916ed65cff1f4"
@@ -11946,6 +11951,11 @@ human-signals@^1.1.1:
   resolved "https://registry.yarnpkg.com/human-signals/-/human-signals-1.1.1.tgz#c5b1cd14f50aeae09ab6c59fe63ba3395fe4dfa3"
   integrity sha512-SEQu7vl8KjNL2eoGBLF3+wAjpsNfA9XMlXAYj/3EdaNfAlxKthD1xjEQfGOUhllCGGJVNY34bRr6lPINhNjyZw==
 
+hyphenate-style-name@^1.0.0:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/hyphenate-style-name/-/hyphenate-style-name-1.0.4.tgz#691879af8e220aea5750e8827db4ef62a54e361d"
+  integrity sha512-ygGZLjmXfPHj+ZWh6LwbC37l43MhfztxetbFCoYTM2VjkIUpeHgSNn7QIyVFj7YQ1Wl9Cbw5sholVJPzWvC2MQ==
+
 i18next-browser-languagedetector@^3.0.1:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/i18next-browser-languagedetector/-/i18next-browser-languagedetector-3.1.1.tgz#1a0c236d4339476cc3632da60ff947bbc2e3ba3c"
@@ -14708,6 +14718,13 @@ marked@0.3.19:
   version "0.3.19"
   resolved "https://registry.yarnpkg.com/marked/-/marked-0.3.19.tgz#5d47f709c4c9fc3c216b6d46127280f40b39d790"
   integrity sha512-ea2eGWOqNxPcXv8dyERdSr/6FmzvWwzjMxpfGB/sbMccXoct+xY+YukPD+QTUZwyvK7BZwcr4m21WBOW41pAkg==
+
+matchmediaquery@^0.3.0:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/matchmediaquery/-/matchmediaquery-0.3.1.tgz#8247edc47e499ebb7c58f62a9ff9ccf5b815c6d7"
+  integrity sha512-Hlk20WQHRIm9EE9luN1kjRjYXAQToHOIAHPJn9buxBwuhfTHoKUcX+lXBbxc85DVQfXYbEQ4HcwQdd128E3qHQ==
+  dependencies:
+    css-mediaquery "^0.1.2"
 
 math-random@^1.0.1:
   version "1.0.4"
@@ -17685,7 +17702,7 @@ prompts@^2.0.1:
     kleur "^3.0.3"
     sisteransi "^1.0.5"
 
-prop-types@^15.5.8, prop-types@^15.6.2, prop-types@^15.7.2:
+prop-types@^15.5.8, prop-types@^15.6.1, prop-types@^15.6.2, prop-types@^15.7.2:
   version "15.7.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
@@ -18144,6 +18161,16 @@ react-remove-scroll@^2.3.0:
     tslib "^1.0.0"
     use-callback-ref "^1.2.3"
     use-sidecar "^1.0.1"
+
+react-responsive@^9.0.0-beta.3:
+  version "9.0.0-beta.3"
+  resolved "https://registry.yarnpkg.com/react-responsive/-/react-responsive-9.0.0-beta.3.tgz#934cd8e21d007335ef1456b66288ee197e69b78a"
+  integrity sha512-h194vQjUvxY4f9pMWDltSqllymir6Kdt5bqmTOdBeHsVnk/oe+lmD296hViKUDSYfjAHhdKVHMiexYY9dmvA+w==
+  dependencies:
+    hyphenate-style-name "^1.0.0"
+    matchmediaquery "^0.3.0"
+    prop-types "^15.6.1"
+    shallow-equal "^1.2.1"
 
 react-router-dom@^5.0.0:
   version "5.2.0"
@@ -19558,6 +19585,11 @@ sha.js@^2.4.0, sha.js@^2.4.11, sha.js@^2.4.8:
   dependencies:
     inherits "^2.0.1"
     safe-buffer "^5.0.1"
+
+shallow-equal@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/shallow-equal/-/shallow-equal-1.2.1.tgz#4c16abfa56043aa20d050324efa68940b0da79da"
+  integrity sha512-S4vJDjHHMBaiZuT9NPb616CSmLf618jawtv3sufLl6ivK8WocjAo58cXwbRV1cgqxH0Qbv+iUt6m05eqEa2IRA==
 
 shallowequal@^1.0.2, shallowequal@^1.1.0:
   version "1.1.0"
