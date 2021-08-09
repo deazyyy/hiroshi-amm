@@ -1,4 +1,4 @@
-import React, { Suspense, useEffect, useState } from 'react'
+import React, { Suspense, useEffect, useState ,useRef} from 'react'
 import { HashRouter, Route, Switch } from 'react-router-dom'
 import { ResetCSS ,Button} from '@pancakeswap-libs/uikit'
 import styled from 'styled-components'
@@ -25,6 +25,8 @@ import { RedirectPathToSwapOnly, RedirectToSwap } from './Swap/redirects'
 import { EN, allLanguages } from '../constants/localisation/languageCodes'
 import { LanguageContext } from '../hooks/LanguageContext'
 import { TranslationsContext } from '../hooks/TranslationsContext'
+import FailNotify from './Modals/notifications/FailNotify'
+import SuccessNotify from './Modals/notifications/SuccessNotify'
 
 import Menu from '../components/Menu'
 
@@ -80,6 +82,11 @@ export default function App() {
     }
   }
 
+
+  const failnotifyRef = useRef(null)
+  const successnotifyRef = useRef(null)
+
+
   return (
     <Suspense fallback={null}>
       <HashRouter>
@@ -93,6 +100,8 @@ export default function App() {
                 <BodyWrapper>
                   <Popups />
                   <div className="invinciheight" />
+                  <FailNotify ref={failnotifyRef} />
+                  <SuccessNotify ref={successnotifyRef} />
                   <Web3ReactManager>
                     <Switch>
                       <Route exact strict path='/swap' component={Swap} />
