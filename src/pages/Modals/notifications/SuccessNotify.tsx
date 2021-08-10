@@ -61,7 +61,7 @@ const SuccessNotify = forwardRef((props, ref) => {
       className="notificationmodal"
     >
       <div className="claimmodelouter notificationmodalouter">
-        <img src="images/hiroshi/lp1.png" alt="lp" className="lpimage"/>
+        <img src="images/hiroshi/lp1.svg" alt="lp" className="lpimage"/>
         <div className="content">
           <h2>{title}</h2>
           {description}

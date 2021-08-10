@@ -62,7 +62,7 @@ const FailNotify = forwardRef((props, ref) => {
     
       
       <div className="claimmodelouter notificationmodalouter">
-        <img src="images/hiroshi/lp3.png" alt="lp" className="lpimage2"/>
+        <img src="images/hiroshi/lp3.svg" alt="lp" className="lpimage2"/>
         <div className="content">
           <h2>{title}</h2>
           {description}
