@@ -15,6 +15,7 @@ const Menu: React.FC = props => {
   const cakePriceUsd = useGetPriceData()
 
   return (
+
     <UikitMenu
       links={links}
       priceLink="https://www.coingecko.com/en/coins/hiroshi-finance"
