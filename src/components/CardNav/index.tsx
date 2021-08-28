@@ -43,21 +43,21 @@ const Nav = ({ activeIndex = 0 }: { activeIndex?: number }) => (
     <header>
       <div className="navOuter">
         <ButtonMenu activeIndex={activeIndex} size="sm" variant="subtle">
-          <ButtonMenuItem id="swap-nav-link" to="/swap" as={Link}>
+          <a id="swap-nav-link" href="#/swap" >
             <TranslatedText translationId={8}>Swap</TranslatedText>
-          </ButtonMenuItem>
-          <ButtonMenuItem id="pool-nav-link" to="/pool" as={Link}>
+          </a>
+          <a id="pool-nav-link" href="#/pool" >
             <TranslatedText translationId={74}>Liquidity</TranslatedText>
-          </ButtonMenuItem>
-          <ButtonMenuItem
+          </a>
+          <a
             id="pool-nav-link"
-            as="a"
+
             href="https://www.binance.org/en/panama"
             target="_blank"
             rel="noreferrer noopener"
           >
             Bridge
-          </ButtonMenuItem>
+          </a>
         </ButtonMenu>
       </div>
       <div className="header">

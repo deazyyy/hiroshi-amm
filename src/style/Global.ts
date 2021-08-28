@@ -1478,6 +1478,7 @@ const GlobalStyle = createGlobalStyle`
 }
 .navOuter a{
   font-weight:600;
+  color:#fff;
   &:hover{
     color:#fff
   }
