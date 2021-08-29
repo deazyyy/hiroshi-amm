@@ -12,6 +12,7 @@ const defaultOnDismiss = () => null
 
 const SettingsModal = ({ onDismiss = defaultOnDismiss }: SettingsModalProps) => {
   return (
+     // @ts-ignore
     <Modal title="Settings" className="settingsmodal" onDismiss={onDismiss}>
       <SlippageToleranceSetting />
       <TransactionDeadlineSetting />

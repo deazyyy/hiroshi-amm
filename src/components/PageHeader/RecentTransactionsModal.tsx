@@ -45,6 +45,7 @@ const RecentTransactionsModal = ({ onDismiss = defaultOnDismiss }: RecentTransac
   }, [allTransactions])
 
   return (
+     // @ts-ignore
     <Modal title="Recent Transactions" onDismiss={onDismiss} className="recentransactionmodal">
       {!account && (
         <Flex justifyContent="center" flexDirection="column" alignItems="center">
