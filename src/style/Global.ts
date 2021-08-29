@@ -555,9 +555,11 @@ const GlobalStyle = createGlobalStyle`
       align-items: center;
       justify-content: space-between;
     }
+    @media (max-width: 991px) {
+      margin-top:14px
+    }
     @media (max-width: 768px) {
       .menutopdeskinner {
-        margin-top:14px;
         .navigation{
           margin-left:14px;
           .text{
@@ -827,6 +829,10 @@ const GlobalStyle = createGlobalStyle`
     opacity: 0;
     transition: opacity 2s ease-in,
       transform 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      @media (max-width: 768px) {
+        top: 45px;
+        left: 4px;
+      }
   }
   .navigation__list {
     position: static;
