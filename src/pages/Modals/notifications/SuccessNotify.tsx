@@ -54,8 +54,8 @@ const SuccessNotify = forwardRef((props, ref) => {
     <Modal
       // parentSelector={() => document.querySelector('.kokirinner ')}
       isOpen={modalIsOpen}
-      onAfterOpen={afterOpenModal}
-      onRequestClose={closeModal}
+      onAfterOpen={() => afterOpenModal}
+      onRequestClose={() => closeModal}
       style={customStyles}
       contentLabel="Example Modal"
       className="notificationmodal"

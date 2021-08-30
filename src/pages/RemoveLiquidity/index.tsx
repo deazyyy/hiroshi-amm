@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-bind */
 import React, { useCallback, useContext, useMemo, useState } from 'react'
 import styled, { ThemeContext } from 'styled-components'
 import { splitSignature } from '@ethersproject/bytes'
@@ -401,7 +402,7 @@ export default function RemoveLiquidity({
             </RowBetween>
           </>
         )}
-        <Button disabled={!(approval === ApprovalState.APPROVED || signatureData !== null)} onClick={onRemove}>
+        <Button disabled={!(approval === ApprovalState.APPROVED || signatureData !== null)} onClick={() => onRemove}>
           Confirm
         </Button>
       </>
