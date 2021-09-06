@@ -402,7 +402,7 @@ export default function RemoveLiquidity({
             </RowBetween>
           </>
         )}
-        <Button disabled={!(approval === ApprovalState.APPROVED || signatureData !== null)} onClick={() => onRemove}>
+        <Button disabled={!(approval === ApprovalState.APPROVED || signatureData !== null)} onClick={() => {onRemove()}}>
           Confirm
         </Button>
       </>
