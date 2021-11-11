@@ -112,6 +112,7 @@ const Swap = () => {
   const [deadline] = useUserDeadline()
   const [allowedSlippage] = useUserSlippageTolerance()
 
+
   // swap state
   const { independentField, typedValue, recipient } = useSwapState()
   const {
@@ -200,7 +201,7 @@ const Swap = () => {
   const noRoute = !route
 
   // check whether the user has approved the router on the input token
-  const [approval, approveCallback] = useApproveCallbackFromTrade(trade, allowedSlippage)
+  const [approval, approveCallback] = useApproveCallbackFromTrade(trade, Math.floor(allowedSlippage))
 
   // check if user has gone through approval process, used to show two step buttons, reset on token change
   const [approvalSubmitted, setApprovalSubmitted] = useState<boolean>(false)
@@ -218,7 +219,7 @@ const Swap = () => {
   // the callback to execute the swap
   const { callback: swapCallback, error: swapCallbackError } = useSwapCallback(
     trade,
-    allowedSlippage,
+    Math.floor(allowedSlippage),
     deadline,
     recipient
   )
